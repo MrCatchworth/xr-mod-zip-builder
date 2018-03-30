@@ -14,13 +14,7 @@ if test -f $archiveName; then
     rm -v $archiveName
 fi
 
-if test -f ../$extName/7z_build_exclude.txt; then
-    echo "$extName has its own exclusion listfile"
-    listName=$extName/7z_build_exclude.txt
-else
-    echo "$extName does NOT have its own exclusion listfile, using the global one"
-    listName=$hereName/7z_build_exclude.txt
-fi
+listName=$hereName/7z_build_exclude.txt
 
 cd ..
 
