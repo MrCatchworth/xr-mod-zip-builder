@@ -3,5 +3,6 @@
 *.pdn
 *.zip
 .git*
+.*
 _*
 7z_build_exclude.txt

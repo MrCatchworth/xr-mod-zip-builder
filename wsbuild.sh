@@ -36,5 +36,5 @@ test ! -e build/$extBaseName && mkdir build/$extBaseName
 outPath=build/$extBaseName
 
 "$catTool" -in $extPath -out $outPath/ext_01.cat -include "^.+" -exclude "^[\._]" "^content.xml$" "^readme" "\.txt$" $extraExclude
-cp $contentPath $outPath
-cp $extPath/*.txt $outPath
+cp -v $contentPath $outPath/content.xml
+cp -v $extPath/*.txt $outPath
